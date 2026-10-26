@@ -1,16 +1,16 @@
 @echo off
-title Kino Bot - Ishga tushirish
+title Kino Bot (Node.js) - Ishga tushirish
 chcp 65001 > nul
 echo ===================================================
-echo             KINO BOT ISHGA TUSHMOQDA...
+echo       KINO BOT (NODE.JS) ISHGA TUSHMOQDA...
 echo ===================================================
 
-echo Kerakli kutubxonalar tekshirilmoqda...
-python -m pip install -r requirements.txt
+echo Kerakli paketlar tekshirilmoqda...
+call npm.cmd install
 
 echo.
 echo Bot ishga tushirilmoqda...
-python bot.py
+node bot.js
 
 echo.
 echo Bot to'xtadi.
